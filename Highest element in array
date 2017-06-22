@@ -1,0 +1,31 @@
+package name;
+
+
+public class Arrayextra 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int arr[][]={{4,6},{5,3},{99}};
+        Arrayextra a1=new Arrayextra();
+		System.out.print(" maximun elementis "+a1.max(arr));
+	}
+	
+        int max(int [][]a)
+         {
+        	 int m=a[0][0];
+        		 
+        	 for(int i=0;i<a.length;i++)
+          	{
+          		for(int j=0;j<a[i].length;j++)
+          		{
+          			if(a[i][j]>m)
+          	      	 m=a[i][j];
+          	        
+          		}
+          	}
+          		return m;
+          	}
+  } 
+     	
