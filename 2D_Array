@@ -1,0 +1,53 @@
+package name;
+
+import java.util.Scanner;
+public class Arraydoubt {
+static Scanner s=new Scanner(System.in);
+	public static void main(String[] args)
+	
+	{
+		int rows;
+		System.out.println("enter the no of rows");  //for the no of rows
+		rows=s.nextInt();
+		int cc;
+		System.out.println(" enter the no of columns");// for the no of columns
+		cc=s.nextInt();
+
+
+		
+		int array[][]=new int [rows][cc];
+	
+
+for(int r=0;r<array.length;r++)        // loop for no of rows
+  {
+	
+	System.out.println(" enter elements of "+r+" row");
+
+	for(int c=0;c<array[r].length;c++ )  //loop for no of columns
+	{
+		
+
+		array[r][c]=s.nextInt();             //input
+	}
+	System.out.println();
+	}
+
+	
+
+for(int r=0;r<array.length;r++)        // loop for no of rows
+{
+	
+	System.out.println(" enter elements of "+r+" row are:");
+
+	for(int c=0;c<array[r].length;c++ )  //loop for no of columns
+	{
+		
+
+		System.out.print(array[r][c]);            //output 
+	}
+	System.out.println();
+	}
+
+	}
+	
+}
