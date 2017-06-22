@@ -1,0 +1,24 @@
+package name;
+
+public class Add {
+
+	int a,b,c;
+  void input()
+  {
+	  a=1;
+	  b=2;
+	  c=a|b;
+	  System.out.print(c);
+	  
+  }
+ public static void main(String args[])
+ {
+ 
+	 Add obj =new Add();
+	 obj.input();
+	
+	 
+	 
+ }
+}
+
