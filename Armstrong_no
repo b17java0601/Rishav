@@ -1,0 +1,28 @@
+package name;
+import java.util.Scanner;
+public class Armstrong 
+{
+	public static void main(String[] args)
+	{
+int n,r;
+int total=0;
+int i=0;
+Scanner s=new Scanner(System.in);
+System.out.print("Enter the no ");
+n=s.nextInt();
+int no=n;
+while(n!=0)
+{
+	r=n%10;
+	total=total+(r*r*r);
+	n=n/10;
+}	
+if(total==no)
+	System.out.print(total+" IS ARMSTRONG NO");
+	else
+{		
+		System.out.print(total+" IS NOT AN ARMSTRONG NO");
+}		
+}
+	}
+	
